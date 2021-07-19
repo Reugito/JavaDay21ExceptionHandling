@@ -4,10 +4,10 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class UserRegistration {
-	private static final String NAME_VALIDATOR = "^[a-zA-Z]{4,}$";
-	private static final String CONTACTNUMBER_VALIDATOR = "^91\\s[0-9]{10}$";
-	private static final String EMAIL_VALIDATOR ="^[a-zA-Z0-9_.]*[-]*[+]*[a-zA-Z0-9]*@[a-zA-Z0-9]+([.][a-zA-Z]+)$";
-	private static final String PASSWORD_VALIDATOR = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])"
+	static final String NAME_VALIDATOR = "^[a-zA-Z]{4,}$";
+	static final String CONTACTNUMBER_VALIDATOR = "^91\\s[0-9]{10}$";
+	static final String EMAIL_VALIDATOR ="^[a-zA-Z0-9_.]*[-]*[+]*[a-zA-Z0-9]*@[a-zA-Z0-9]+([.][a-zA-Z]+)$";
+	static final String PASSWORD_VALIDATOR = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])"
             										+ "(?=.*[@#$%^&+=])"
             										+ "(?=\\S+$).{8,20}$";
 	Scanner sc = new Scanner(System.in);
